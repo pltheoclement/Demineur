@@ -203,6 +203,7 @@ int gagner_partie(int pointeur_grille_affichage[1000])
     }
 }
 
+
 void sauvegarder_partie()
 {
     int i, n;
