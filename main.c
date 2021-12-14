@@ -10,6 +10,9 @@ int main(){
     int l;
     
     printf("%d",l);
+    printf("%d",l);
+    printf("%d",l);
+    printf("%d",l);
     
     j=1;
     k=9.888;
