@@ -3,6 +3,9 @@
 
 
 int main(){
+    
+    int i;
+    i=0.1;
     Affichage_menu();
     return 0;
 }
