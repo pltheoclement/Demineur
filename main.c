@@ -9,6 +9,8 @@ int main(){
     int k;
     int l;
     
+    printf("%d",l);
+    
     j=1;
     k=9.888;
     l=0.89776;
