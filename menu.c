@@ -2,7 +2,9 @@
 #include "fonction.h"
 #include "variable.h"
 
-
+i
+k
+l
 
 //Fonction affichage qui est le premier menu affiché au joueur 
 void Affichage_menu(){
