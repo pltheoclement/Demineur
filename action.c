@@ -131,6 +131,33 @@ void placer_supprimer_drapeau(int pointeur_grille_affichage[1000], int ligne, in
     }
 }
 
+void placer_supprime_drapeau(int pointeur_grille_affichage[1000], int ligne, int colonne)
+{
+    //Le drapeau est caractérisée par un 9 dans la grille d'affichage 
+    //Si la case n'est pas dévoilée ou si il y a deja un drapeau dessus 
+    if (pointeur_grille_affichage[(((ligne - 1) * colonnes + (colonne)) - 1)] == -1 || pointeur_grille_affichage[(((ligne - 1) * colonnes + (colonne)) - 1)] == 9)
+    {
+        //Si il y a pas de drapeau alors on pose un drapeau
+        if (pointeur_grille_affichage[(((ligne - 1) * colonnes + (colonne)) - 1)] != 9)
+        {
+            pointeur_grille_affichage[(((ligne - 1) * colonnes + (colonne)) - 1)] = 9;
+        }
+
+        //Si drapeau alors on l'enlève 
+        else
+        {
+            printf("Un drapeau se trouve deja sur cette case il va donc etre supp de la grille");
+            pointeur_grille_affichage[(((ligne - 1) * colonnes + (colonne)) - 1)] = -1;
+        }
+    }
+
+    //Si case déja dévoilée
+    else
+    {
+        printf("La case est devoile vous ne pouvez pas mettre un drapeau ici");
+    }
+}
+
 void placer_supprimer_interro(int pointeur_grille_affichage[1000], int ligne, int colonne)
 {
     //Le point d'interro est caractérisé par un 10 dans la grille de test 
