@@ -230,6 +230,29 @@ int gagner_partie(int pointeur_grille_affichage[1000])
     }
 }
 
+int gagner_partie2(int pointeur_grille_affichage[1000])
+{
+    int compteur=0;
+    int dim_tab=colonnes*lignes;
+    //Parcours de la grille d'affichage de la grille d'affichage
+    for (int i = 0; i < dim_tab; i++)
+    {
+        //Si on trouve que la case comporte un nombre de bombes affichées dans la grille alors on ajoute 1 au compteur
+        if (pointeur_grille_affichage[i]==0 || pointeur_grille_affichage[i]==1 || pointeur_grille_affichage[i]==2 || pointeur_grille_affichage[i]==3 || pointeur_grille_affichage[i]==4 || pointeur_grille_affichage[i]==5 || pointeur_grille_affichage[i]==6 || pointeur_grille_affichage[i]==7 || pointeur_grille_affichage[i]==8)//&& pointeur_grille_affichage[i]!=9 && pointeur_grille_affichage[i]!=10
+        {
+            compteur=compteur+1;
+        }
+    }
+    //Test si le nombre total de cases dévoilées est égale a la taille max de la grille moins le nombre de bombes (si oui la partie est gagnée)
+    if (compteur==dim_tab-nb_mines)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
 
 void sauvegarder_partie()
 {
