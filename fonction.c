@@ -177,6 +177,192 @@ void Affichage_grille(int Grille[1000])
     printf("\n");
 }
 
+void Affichage_grille1(int Grille[1000])
+{
+
+    //Création de deux variables qui permettent de bouger dans le tableau 1D et afficher le tableau 2D
+    int fin_ligne = 0;
+    int fin_colonne = colonnes;
+
+    printf(" ");
+
+    //Délimitation supérieure de la grille
+    for (int k = 0; k < colonnes; k++)
+    {
+        printf(" ");
+        printf("-");
+    }
+    printf("\n");
+
+    //Affichage de la grille 1D en grille 2D
+    for (int i = 0; i < lignes; i++)
+    {
+        printf("| ");//Permet de délimiter la partie gauche de la grille 
+        for (int j = fin_ligne; j < fin_colonne; j++)
+        {
+            //si la case n'a pas été encore dévoilée
+            if (Grille[j] == -1)
+            {
+                printf("  ");
+            }
+            //si la case contient un drapeau
+            else if (Grille[j] == 9)
+            {
+                printf("D ");
+            }
+            //si la case contient un ?
+            else if (Grille[j] == 10)
+            {
+                printf("? ");
+            }
+            //Si la case est une case dévoilée
+            else
+            {
+                printf("%d ", Grille[j]);
+            }
+        }
+        //Délimitation droite de la grille 
+        printf("|");
+        //On décale le fin_ligne dans la grille 1D sur la case qui correspond au début de la ligne suivante dans le tableau 2D
+        fin_ligne = fin_colonne;
+        //On décale le fin_colonne dans la grille 1D sur la case qui correspond à la fin de la ligne suivante dans le tableau 2D
+        fin_colonne = fin_colonne + colonnes;
+        printf("\n");
+    }
+
+    //Délimitation inférieure de la grille
+    printf(" ");
+    for (int k = 0; k < colonnes; k++)
+    {
+        printf(" ");
+        printf("-");
+    }
+    printf("\n");
+}
+void Affichage_grille22222222222222(int Grille[1000])
+{
+
+    //Création de deux variables qui permettent de bouger dans le tableau 1D et afficher le tableau 2D
+    int fin_ligne = 0;
+    int fin_colonne = colonnes;
+
+    printf(" ");
+
+    //Délimitation supérieure de la grille
+    for (int k = 0; k < colonnes; k++)
+    {
+        printf(" ");
+        printf("-");
+    }
+    printf("\n");
+
+    //Affichage de la grille 1D en grille 2D
+    for (int i = 0; i < lignes; i++)
+    {
+        printf("| ");//Permet de délimiter la partie gauche de la grille 
+        for (int j = fin_ligne; j < fin_colonne; j++)
+        {
+            //si la case n'a pas été encore dévoilée
+            if (Grille[j] == -1)
+            {
+                printf("  ");
+            }
+            //si la case contient un drapeau
+            else if (Grille[j] == 9)
+            {
+                printf("D ");
+            }
+            //si la case contient un ?
+            else if (Grille[j] == 10)
+            {
+                printf("? ");
+            }
+            //Si la case est une case dévoilée
+            else
+            {
+                printf("%d ", Grille[j]);
+            }
+        }
+        //Délimitation droite de la grille 
+        printf("|");
+        //On décale le fin_ligne dans la grille 1D sur la case qui correspond au début de la ligne suivante dans le tableau 2D
+        fin_ligne = fin_colonne;
+        //On décale le fin_colonne dans la grille 1D sur la case qui correspond à la fin de la ligne suivante dans le tableau 2D
+        fin_colonne = fin_colonne + colonnes;
+        printf("\n");
+    }
+
+    //Délimitation inférieure de la grille
+    printf(" ");
+    for (int k = 0; k < colonnes; k++)
+    {
+        printf(" ");
+        printf("-");
+    }
+    printf("\n");
+}
+void Affichage_grille222222222(int Grille[1000])
+{
+
+    //Création de deux variables qui permettent de bouger dans le tableau 1D et afficher le tableau 2D
+    int fin_ligne = 0;
+    int fin_colonne = colonnes;
+
+    printf(" ");
+
+    //Délimitation supérieure de la grille
+    for (int k = 0; k < colonnes; k++)
+    {
+        printf(" ");
+        printf("-");
+    }
+    printf("\n");
+
+    //Affichage de la grille 1D en grille 2D
+    for (int i = 0; i < lignes; i++)
+    {
+        printf("| ");//Permet de délimiter la partie gauche de la grille 
+        for (int j = fin_ligne; j < fin_colonne; j++)
+        {
+            //si la case n'a pas été encore dévoilée
+            if (Grille[j] == -1)
+            {
+                printf("  ");
+            }
+            //si la case contient un drapeau
+            else if (Grille[j] == 9)
+            {
+                printf("D ");
+            }
+            //si la case contient un ?
+            else if (Grille[j] == 10)
+            {
+                printf("? ");
+            }
+            //Si la case est une case dévoilée
+            else
+            {
+                printf("%d ", Grille[j]);
+            }
+        }
+        //Délimitation droite de la grille 
+        printf("|");
+        //On décale le fin_ligne dans la grille 1D sur la case qui correspond au début de la ligne suivante dans le tableau 2D
+        fin_ligne = fin_colonne;
+        //On décale le fin_colonne dans la grille 1D sur la case qui correspond à la fin de la ligne suivante dans le tableau 2D
+        fin_colonne = fin_colonne + colonnes;
+        printf("\n");
+    }
+
+    //Délimitation inférieure de la grille
+    printf(" ");
+    for (int k = 0; k < colonnes; k++)
+    {
+        printf(" ");
+        printf("-");
+    }
+    printf("\n");
+}
 
 
 void creation_grille_affichage(int pointeur_tab_affichage[1000])
